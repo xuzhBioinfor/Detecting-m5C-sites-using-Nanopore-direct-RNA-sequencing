@@ -1,6 +1,8 @@
 # Detecting-m5C-sites-using-Nanopore-direct-RNA-sequencing
 # Before start
-Use the command ```pip install -r requirements.txt``` to download the m5Cnet environment.
+1.Use the command ```pip install -r requirements.txt``` to download the m5Cnet environment.
+2.We used the Bisulfite-Seq to detect the m5C sites at the single-base resolution from mouse samples, and selected the 5mers with m5C sites at top 50% as model label and input.
+3.We validated the m5Cnet by independent biological mouse samples and achieved ROC AUC of 0.829 and PR AUC of 0.798.
 # Step I. Basecalling
 We must using basecalling software to get the fastq files from fast5 files
 ```
